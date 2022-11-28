@@ -22,23 +22,15 @@
 
     <!-- header -->
     <header>
-
         <div class="ms_bar_title">
-
             <div class="ms_slot_img_logo">
-
                 <img src="img/logo.jpg" alt="logo">
-    
             </div>
     
             <div class="ms_slot_title_logo">
-    
                 <h1>My Slider JS</h1>
-    
             </div>
-
         </div>
-
     </header>
 
     <!-- main -->
@@ -61,10 +53,10 @@
     
                     <div class="thumbs">
                         <!-- pulsante immagine precedente -->
-                        <div class="prev"></div>
+                        <div class="prev" @click="prev"></div>
 
                         <!-- pulsante immagine successiva -->
-                        <div class="next"></div>
+                        <div class="next" @click="next"></div>
 
                         <!-- contenitore in cui inserisco le immagini della thumb -->
                         <div class="slot__thumbs__img">

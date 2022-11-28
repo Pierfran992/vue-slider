@@ -51,7 +51,7 @@ createApp ({
         // creo il metodo per far si che cliccando su un'immagine della thumbnails quella compare nello slider
         selectImg (index) {
             let k = index;
-            this.activeImg = index;
+            this.activeImg = k;
         }
     }
 }).mount("#app");

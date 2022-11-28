@@ -39,13 +39,13 @@ createApp ({
         // creo il metodo per passare all'immagine successiva o ritornare alla prima se si è arrivati all'ultima
         next() {
             // creo un if
-            this.activeImg === this.itemSlider.image.length - 1 ? this.activeImg = 0 : this.activeImg++;
+            this.activeImg === this.itemSlider.length - 1 ? this.activeImg = 0 : this.activeImg++;
         },
 
         //// creo il metodo per passare all'immagine successiva o ritornare alla prima se si è arrivati all'ultima
         prev() {
             // creo un if
-            this.activeImg === 0 ? this.activeImg = this.itemSlider.image.length - 1 : this.activeImg--;
+            this.activeImg === 0 ? this.activeImg = this.itemSlider.length - 1 : this.activeImg--;
         },
 
         // creo il metodo per far si che cliccando su un'immagine della thumbnails quella compare nello slider

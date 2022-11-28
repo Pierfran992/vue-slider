@@ -60,8 +60,7 @@
 
                         <!-- contenitore in cui inserisco le immagini della thumb -->
                         <div class="slot__thumbs__img">
-                            <img v-for="(elem, i) in itemSlider" :src="elem.image" class="thumb" :class="activeImg === i ? 'active' : ''"
-                            @click="selectImg">
+                            <img v-for="(elem, i) in itemSlider" :src="elem.image" class="thumb" :class="activeImg === i ? 'active' : ''" @click="selectImg(i)">
                         </div>
                     </div>
                 </div>

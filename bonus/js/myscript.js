@@ -4,7 +4,7 @@ createApp ({
     data() {
         return {
 
-            activeImg : 3,
+            activeImg : 0,
 
             itemSlider : [
                 {
@@ -49,9 +49,9 @@ createApp ({
         },
 
         // creo il metodo per far si che cliccando su un'immagine della thumbnails quella compare nello slider
-        selectImg () {
-            let i = this.itemSlider.image.length - 1;
-            this.activeImg = this.itemSlider.image[i];
+        selectImg (index) {
+            let k = index;
+            this.activeImg = index;
         }
     }
 }).mount("#app");
